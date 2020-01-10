@@ -30,13 +30,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    The biggest difference between them is that .map() returns a new array and .forEach() does not.
+
 2. What is the difference between a function and a method?
+
+    They're very similar, but a method is a function that belongs to a specific object.
 
 3. What is closure?
 
+    Closure is a function with its scope and its ability to look into outer closures to look up references to the variables it needs.
+
 4. Describe the four rules of the 'this' keyword.
 
+    -window binding: in global scope, 'this' refers to the entire window object
+    -implicit binding: in obj.method instances, 'this' refers to the object to the left of the dot
+    -explicit binding: you can explicitly define what 'this' will refer to by using the .call() or .apply() or .bind() methods
+    -new binding: when creating an object using the keyword 'new', 'this' will refer to the new object being created
+
 5. Why do we need super() in an extended class?
+
+    Because while the keyword 'extends' identifies the parent object to inherit from, you still need a way to pass the attributes from the new child class to the parent in order to set up all the properties correctly. That's what super() does.
 
 ## Project Set up
 
@@ -66,19 +79,19 @@ Your finished project must include all of the following requirements:
 
 ## Task 1: Objects and Arrays
 Test your knowledge of objects and arrays. 
-* [ ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
+* [x] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
 
 ## Task 2: Functions
 This challenge takes a look at callbacks and closures as well as scope. 
-* [ ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
+* [x] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
 
 ## Task 3: Prototypes
 Create constructors, bind methods, and create cuboids in this prototypes challenge.
-* [ ] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
+* [x] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
 
 ## Task 4: Classes
 Once you have completed the prototypes challenge, it's time to convert all your hard work into classes.
-* [ ] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
+* [x] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
 
 In your solutions, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
